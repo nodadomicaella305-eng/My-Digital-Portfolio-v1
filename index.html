@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Micaella Nodado | IT Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       CURSOR
+  ══════════════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand">
+    <span class="brand-name">👤</span>
+    <span class="brand-name">Micaella</span>
+  </div>
+
+  <!-- Desktop nav links -->
+  <ul class="nav-links">
+    <li><a href="#home"     class="nav-link">Home</a></li>
+    <li><a href="#about"    class="nav-link">About Me</a></li>
+    <li><a href="#projects" class="nav-link">Projects</a></li>
+    <li><a href="#skills"   class="nav-link">Skills</a></li>
+    <li><a href="#contact"  class="nav-link">Contact</a></li>
+  </ul>
+
+  <!-- Right side: Active status + theme toggle + hamburger -->
+  <div class="nav-status">
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+      <span id="themeIcon">🔆</span>
+    </button>
+    <span class="status-dot"></span>
+    <span>Active</span>
+    <!-- Hamburger button (mobile only) -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile dropdown nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#home"     onclick="closeMobileMenu()">Home</a>
+  <a href="#about"    onclick="closeMobileMenu()">About Me</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#skills"   onclick="closeMobileMenu()">Skills</a>
+  <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
+</div>
+  <!-- ══════════════════════════════════════
+       SECTION 1 · HOME / HERO
+  ══════════════════════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-inner">
+
+      <!-- Left: Text Content -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-icon">✦</span>
+          <span>IT Student · STI College Naga</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="title-line">Hi! My Name is</span>
+          <span class="title-name">Micaella<br><em>Nodado</em></span>
+        </h1>
+
+        <p class="hero-desc">
+          Welcome to my Digital Portfolio — showcasing my journey, experiences, accomplishments, passions, and the people who inspire me and help and me to grow.
+
+        <div class="hero-actions">
+          <a href="#about"  class="cta-primary">About Me <span>→</span></a>
+          <a href="#mylife" class="cta-ghost">My Life</a>
+          <a href="My Resume.pdf" target="_blank" class="cta-resume"> My Resume</a>
+        </div>
+
+        <div class="hero-meta">
+          <div class="meta-item">
+            <span class="meta-num">20</span>
+            <span class="meta-label">Years Old</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num">BSIT</span>
+            <span class="meta-label">Course</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num">STI College Naga</span>
+            <span class="meta-label">School</span>
+          </div>
+          <div class="meta-divider"></div>
+          <div class="meta-item">
+            <span class="meta-num">Pacol, Naga City</span>
+            <span class="meta-label">Address</span>
+          </div>
+        </div>
+      </div><!-- /hero-left -->
+
+      <!-- Right: Photo -->
+      <div class="hero-right">
+        <div class="photo-container">
+          <div class="photo-ring"></div>
+          <div class="photo-frame">
+            <img src="Me.png" alt="Micaella Nodado">
+          </div>
+      </div><!-- /hero-right -->
+
+    </div><!-- /hero-inner -->
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-bar"><div class="scroll-fill"></div></div>
+    </div>
+  </section><!-- /hero -->  
+
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 · ABOUT ME
+  ══════════════════════════════════════ -->
+  <section id="about" class="about">
+
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">About <em>Me</em></h2>
+    </div>
+
+    <!-- Bio & Details -->
+    <div class="about-layout">
+
+      <div class="about-bio">
+        <p class="bio-text">
+          I'm a passionate IT student at STI College Naga, who wants to build meaningful digital
+          experiences. To strengthen my skills, and to continuously learn and grow in this
+          field of technology to become IT professional in the future.
+        </p>
+        <div class="details-list">
+          <div class="detail-row">
+            <span class="d-label">Full Name</span>
+            <span class="d-val">Micaella Aguirre Nodado</span>
+          </div>
+          <div class="detail-row">
+            <span class="d-label">Age</span>
+            <span class="d-val">20 years old</span>
+          </div>
+          <div class="detail-row">
+            <span class="d-label">Course</span>
+            <span class="d-val">BSIT — STI College Naga</span>
+          </div>
+          <div class="detail-row">
+            <span class="d-label">Address</span>
+            <span class="d-val">Pacol, Naga City</span>
+          </div>
+          <div class="detail-row">
+            <span class="d-label">Status</span>
+            <span class="d-val">In a relationship</span>
+          </div>
+        </div>
+      </div><!-- /about-bio -->
+
+      <div class="about-interests">
+
+        <!-- Hobbies -->
+        <h3 class="interests-title">Hobbies</h3>
+        <div class="interest-pills">
+          <span class="pill pill-orange">📚 Reading E-books</span>
+          <span class="pill pill-blue">🎬 Watching Movies</span>
+          <span class="pill pill-green">🍜 Eating</span>
+          <span class="pill pill-pink">😴 Sleeping</span>
+          <span class="pill pill-purple">🎵 Listen Music</span>
+          <span class="pill pill-teal">📷 Photography</span>
+          <span class="pill pill-red">✈️ Travelling</span>
+        </div>
+
+        <!-- Interests -->
+        <h3 class="interests-title" style="margin-top: 1.5rem;">Interests</h3>
+        <div class="interest-pills">
+          <span class="pill pill-orange">💻 Web Development</span>
+          <span class="pill pill-blue">🎮 Game Development</span>
+          <span class="pill pill-orange">🎨 UI/UX Design</span>
+          <span class="pill pill-blue">🛡️ Hacking</span>
+        </div>
+
+      </div><!-- /about-interests -->
+
+    </div><!-- /about-layout -->
+
+    <!-- Hobby Cards -->
+    <div class="hobby-section-label">
+      <div class="header-dot"></div>
+      <span class="header-label">A Glimpse Into My World</span>
+    </div>
+
+    <div class="hobby-grid" id="hobbyGrid">
+
+      <div class="hcard" onclick="openGallery('reading')">
+        <div class="hcard-img">
+          <img src="Wattpad.png" alt="Read"
+               onerror="this.parentElement.classList.add('no-img'); this.remove(); this.parentElement.innerHTML='<div class=\'placeholder-emoji\'>📚</div>'">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Reading E-books</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="hcard" onclick="openGallery('movies')">
+        <div class="hcard-img">
+          <img src="Netflix.jpeg" alt="Watching"
+               onerror="this.parentElement.classList.add('no-img'); this.remove(); this.parentElement.innerHTML='<div class=\'placeholder-emoji\'>🎬</div>'">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Watching Movies</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="hcard" onclick="openGallery('eating')">
+        <div class="hcard-img no-img">
+          <img src="Mukbang.jpg" alt="Eat">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Eating</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="hcard" onclick="openGallery('music')">
+        <div class="hcard-img">
+          <img src="Music.webp" alt="Listen"
+               onerror="this.parentElement.classList.add('no-img'); this.remove(); this.parentElement.innerHTML='<div class=\'placeholder-emoji\'>🎵</div>'">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Listen Music</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="hcard" onclick="openGallery('photography')">
+        <div class="hcard-img">
+          <img src="Photography.jpg" alt="Photo"
+               onerror="this.parentElement.classList.add('no-img'); this.remove(); this.parentElement.innerHTML='<div class=\'placeholder-emoji\'>📷</div>'">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Photography</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+      <div class="hcard" onclick="openGallery('travelling')">
+        <div class="hcard-img">
+          <img src="Albay.webp" alt="Travel"
+               onerror="this.parentElement.classList.add('no-img'); this.remove(); this.parentElement.innerHTML='<div class=\'placeholder-emoji\'>✈️</div>'">
+        </div>
+        <div class="hcard-footer">
+          <span class="hcard-title">Travelling</span>
+          <span class="hcard-arrow">↗</span>
+        </div>
+      </div>
+
+    </div><!-- /hobby-grid -->
+
+    <!-- Hobby Gallery Lightbox -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeGallery(event)">
+      <div class="lightbox">
+        <div class="lightbox-header">
+  <span class="lightbox-title" id="lightboxTitle">Gallery</span>
+  <button class="lightbox-close" onclick="closeGalleryBtn()">✕</button>
+</div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </div>
+
+    <!-- Hobby Full-Image Viewer -->
+    <div class="img-viewer-overlay" id="imgViewer" onclick="closeImgViewer()">
+      <button class="img-viewer-close" onclick="closeImgViewer()">✕</button>
+      <img id="imgViewerImg" src="" alt="">
+    </div>
+
+  </section><!-- /about -->
+
+
+  <!-- ══════════════════════════════════════
+       SECTION 3 · MY LIFE
+  ══════════════════════════════════════ -->
+  <section id="mylife" class="mylife">
+    <div class="mylife-bg"></div>
+    <div class="mylife-inner">
+
+      <div class="section-header light">
+        <span class="section-number">02</span>
+        <h2 class="section-title">My <em>Life</em></h2>
+      </div>
+      <p class="mylife-intro">The people who are special to me and help me the most.</p>
+
+      <div class="life-grid">
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="MyParents.jpg"    alt="My Parents"></div>
+          <div class="lcard-label">My Parents</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="NodadoFam.jpg" alt="Nodado Family"></div>
+          <div class="lcard-label">My Family (Nodado)</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="AguirreFam.jpg" alt="Aguirre Family"></div>
+          <div class="lcard-label">My Family (Aguirre)</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="Bf.jpg" alt="My Boyfriend"></div>
+          <div class="lcard-label">My Boyfriend</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="HSFriends.jpg" alt="High School Friends"></div>
+          <div class="lcard-label">My Friends (High School)</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="CollegeFriend.jpg" alt="College Friends"></div>
+          <div class="lcard-label">My Friends (College)</div>
+        </div>
+
+        <div class="lcard">
+          <div class="lcard-img"><img src="V&R.jpg" alt="Vina and Rica"></div>
+          <div class="lcard-label">Vina &amp; Rica</div>
+        </div>
+
+      </div><!-- /life-grid -->
+
+    </div><!-- /mylife-inner -->
+  </section><!-- /mylife -->
+
+  <!-- ── Block A: Past School Activities ── -->
+<section id="activities" class="projects">
+
+  <div class="section-header">
+    <span class="section-number">03</span>
+    <h2 class="section-title">Additional <em> Past School Activities</em></h2>
+  </div>
+
+    <div class="proj-block">
+      <div class="proj-block-header">
+        <p class="mylife-intro">These are my school activities during my elementary days.</p>
+        <span class="proj-tag">Extracurricular</span>
+        <h3 class="proj-block-title">Additional — Past School Activities</h3>
+      </div>
+
+      <!-- Majorette: 3 cards → cols-3 -->
+      <div class="activity-group">
+        <p class="activity-subtitle">Majorette (2014 – 2016)</p>
+        <div class="activity-grid cols-3">
+
+          <div class="act-grid-card">
+            <div class="act-grid-img">
+            <img src="Majorette2014.jpg" alt="">
+            </div>
+            <div class="act-grid-label">2014</div>
+          </div>
+
+          <div class="act-grid-card">
+            <div class="act-grid-img">
+            <img src="Majorette2015.jpg" alt="">
+            </div>
+            <div class="act-grid-label">2015</div>
+          </div>
+
+          <div class="act-grid-card">
+            <div class="act-grid-img">
+             <img src="Majorette2016.jpg" alt="">
+            </div>
+            <div class="act-grid-label">2016</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Ms. Nutrition Month: 1 card → cols-1 -->
+      <div class="activity-group">
+        <p class="activity-subtitle">Ms. Nutrition Month (2015)</p>
+        <div class="activity-grid cols-1">
+
+          <div class="act-grid-card">
+            <div class="act-grid-img">
+            <img src="Ms.Nutrition Month.jpg" alt="">
+            </div>
+            <div class="act-grid-label">2015</div>
+          </div>
+
+        </div>
+
+    </div><!-- /proj-block C -->
+    </section>
+  <!-- ══════════════════════════════════════
+       SECTION 4 · PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="projects">
+
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2 class="section-title">My <em>Projects</em></h2>
+    </div>
+
+    <!-- ── Block B: Movie Project Certificates ── -->
+    <div class="proj-block">
+      <div class="proj-block-header">
+        <span class="proj-tag">Movie Project</span>
+        <h3 class="proj-block-title">Certificates in Our Movie Project</h3>
+        <p class="proj-block-sub">These are the certificates we received for our movie project in Professional Issues.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <div class="cert-card" onclick="openCert('Champion.jpg', 'Champion')">
+          <div class="cert-img"><img src="Champion.jpg" alt="Champion"></div>
+          <div class="cert-label">Champion</div>
+        </div>
+
+        <div class="cert-card" onclick="openCert('2nd Runner Up.png', '2nd Runner Up')">
+          <div class="cert-img"><img src="2nd Runner Up.png" alt="2nd Runner Up"></div>
+          <div class="cert-label">2nd Runner Up</div>
+        </div>
+
+        <div class="cert-card" onclick="openCert('1st Runner Up.png', '1st Runner Up')">
+          <div class="cert-img"><img src="1st Runner Up.png" alt="1st Runner Up"></div>
+          <div class="cert-label">1st Runner Up</div>
+        </div>
+
+        <div class="cert-card" onclick="openCert('1st Runner Up(1).png', '1st Runner Up')">
+          <div class="cert-img"><img src="1st Runner Up(1).png" alt="1st Runner Up"></div>
+          <div class="cert-label">1st Runner Up</div>
+        </div>
+
+        <div class="cert-card" onclick="openCert('CertofPublication.png', 'Certificate of Publication')">
+          <div class="cert-img"><img src="CertofPublication.png" alt="Certificate of Publication"></div>
+          <div class="cert-label">Cert of Publication</div>
+        </div>
+
+        <div class="cert-card" onclick="openCert('CertofParticipation.png', 'Certificate of Participation')">
+          <div class="cert-img"><img src="CertofParticipation.png" alt="Certificate of Participation"></div>
+          <div class="cert-label">Cert of Participation</div>
+        </div>
+
+      </div><!-- /cert-grid -->
+
+      <!-- Certificate Lightbox -->
+      <div class="cert-overlay" id="certOverlay" onclick="closeCert(event)">
+        <div class="cert-lightbox">
+          <button class="cert-lb-close" onclick="closeCertDirect()">&times;</button>
+          <img class="cert-lb-img" id="certLbImg" src="" alt="">
+          <p class="cert-lb-caption" id="certLbCaption"></p>
+          <div class="cert-lb-nav">
+            <button onclick="shiftCert(-1)">&#8592; Prev</button>
+            <span id="certLbCounter"></span>
+            <button onclick="shiftCert(1)">Next &#8594;</button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /proj-block A -->
+
+    <!-- ── Block C: Professional Issues Poster ── -->
+    <div class="proj-block">
+      <div class="proj-block-header">
+        <span class="proj-tag">Academic Work</span>
+        <h3 class="proj-block-title">Project in Professional Issues</h3>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-img"><img src="Poster.jpg" alt="Poster"></div>
+          <div class="showcase-label">Poster</div>
+        </div>
+      </div>
+
+    </div><!-- /proj-block C -->
+  </section><!-- /projects   -->
+
+  <!-- ── Block D & E: Project Cards ── -->
+<section id="projects" class="projects">
+
+  <div class="section-header">
+    <span class="section-number">05</span>
+    <h2 class="section-title">Our <em>Current Projects</em></h2>
+  </div>
+
+  <p class="mylife-intro">Our projects for Capstone 1 and Web Systems/MIS Course Subject.</p>
+
+  <div class="proj-card-grid">
+
+    <!-- Capstone Card -->
+    <div class="proj-card">
+      <div class="proj-card-bg" style="background-image: url('Hi5Portal.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="proj-card-overlay"></div>
+      <div class="proj-card-body">
+        <div class="card-logo-area">
+          <div class="card-logo-icon">🎓</div>
+        </div>
+        <span class="proj-card-tag">Capstone 1</span>
+        <div class="proj-card-title">Hi5 Portal Enrollment System</div>
+        <div class="proj-card-desc">An online enrollment system designed to streamline the student enrollment, grade management, school form generation, and AI-powered at risk detection for Don Servillano Platon Memorial National High School.</div>
+        <div class="proj-card-footer">
+          <button class="view-details-btn" onclick="openProjModal('hi5')">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MIS / Inventory Card -->
+    <div class="proj-card">
+      <div class="proj-card-bg" style="background-image: url('Platonians Inventory.png'); background-size: cover; background-position: center;"></div>
+      <div class="proj-card-overlay"></div>
+      <div class="proj-card-body">
+        <div class="card-logo-area">
+          <div class="card-logo-icon">🗄️</div>
+        </div>
+        <span class="proj-card-tag">Web System · MIS Project</span>
+        <div class="proj-card-title">Platonians School Assets </div>
+        <div class="proj-card-desc">A platform designed for tracking assets, equipment, and consumable supplies across all departments for Don Servillano Platon Memorial National High School.</div>
+        <div class="proj-card-features">
+        <div class="proj-card-footer">
+          <button class="view-details-btn" onclick="openProjModal('inv')">View Details</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT DETAIL MODAL -->
+<div class="proj-modal-backdrop" id="projModal" onclick="if(event.target===this)closeProjModal()">
+  <div class="proj-modal">
+    <div class="pm-preview">
+      <button class="pm-close" onclick="closeProjModal()">✕</button>
+      <div class="pm-preview-placeholder" id="pmPlaceholder"></div>
+    </div>
+    <div class="pm-body">
+      <div class="pm-status"><span class="pm-status-dot"></span><span id="pmStatus"></span></div>
+      <div class="pm-title" id="pmTitle"></div>
+      <div class="pm-desc" id="pmDesc"></div>
+      <div class="pm-tech-row" id="pmTech"></div>
+      <div class="pm-divider"></div>
+      <div class="pm-bottom">
+        <div class="pm-features" id="pmFeatures"></div>
+        <a class="repo-btn" id="pmRepo" href="#" target="_blank">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="#fff">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          View Repository
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ══════════════════════════════════════
+     SECTION 6· SKILLS
+══════════════════════════════════════ -->
+<section id="skills" class="skills">
+
+  <div class="section-header">
+    <span class="section-number">06</span>
+    <h2 class="section-title">My <em>Skills</em></h2>
+  </div>
+
+  <p class="mylife-intro">These are my skills which I have developed over the years, but somehow I still need to learn and improve.</p>
+  <!-- Languages -->
+  <div class="skills-group">
+    <div class="skills-group-label">
+      <div class="header-dot"></div>
+      <span>Languages</span>
+    </div>
+    <div class="skills-bar-list">
+
+      <div class="skill-bar-item">
+        <div class="skill-bar-info">
+          <span class="skill-name">HTML</span>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" style="--w: 80%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-item">
+        <div class="skill-bar-info">
+          <span class="skill-name">CSS</span>
+          <span class="skill-pct">50%</span>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" style="--w: 50%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-item">
+        <div class="skill-bar-info">
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-pct">60%</span>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" style="--w: 60%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-item">
+        <div class="skill-bar-info">
+          <span class="skill-name">Python</span>
+          <span class="skill-pct">50%</span>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" style="--w: 50%"></div>
+        </div>
+      </div>
+
+      <div class="skill-bar-item">
+        <div class="skill-bar-info">
+          <span class="skill-name">PHP</span>
+          <span class="skill-pct">50%</span>
+        </div>
+        <div class="skill-track">
+          <div class="skill-fill" style="--w: 50%"></div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /languages -->
+
+  <!-- Tools -->
+  <div class="skills-group">
+    <div class="skills-group-label">
+      <div class="header-dot"></div>
+      <span>Tools & Software</span>
+    </div>
+    <div class="skills-tools-grid">
+      <div class="tool-card">
+        <span class="tool-icon">🖥️</span>
+        <span class="tool-name">VS Code</span>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon">🎨</span>
+        <span class="tool-name">Figma</span>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon">🗄️</span>
+        <span class="tool-name">MySQL</span>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon">📁</span>
+        <span class="tool-name">GitHub</span>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon">🌐</span>
+        <span class="tool-name">XAMPP</span>
+      </div>
+      <div class="tool-card">
+        <span class="tool-icon">🖼️</span>
+        <span class="tool-name">Canva</span>
+      </div>
+    </div>
+  </div><!-- /tools -->
+
+  <!-- Soft Skills -->
+  <div class="skills-group">
+    <div class="skills-group-label">
+      <div class="header-dot"></div>
+      <span>Soft Skills</span>
+    </div>
+    <div class="soft-skills-grid">
+      <div class="soft-card">
+        <span class="soft-icon">🤝</span>
+        <span class="soft-name">Teamwork</span>
+        <span class="soft-desc">Works well in group settings and collaborative environments.</span>
+      </div>
+      <div class="soft-card">
+        <span class="soft-icon">💬</span>
+        <span class="soft-name">Communication</span>
+        <span class="soft-desc">Expresses ideas clearly and listens actively.</span>
+      </div>
+      <div class="soft-card">
+        <span class="soft-icon">🧩</span>
+        <span class="soft-name">Problem Solving</span>
+        <span class="soft-desc">Thinks critically and finds practical solutions.</span>
+      </div>
+      <div class="soft-card">
+        <span class="soft-icon">⏰</span>
+        <span class="soft-name">Time Management</span>
+        <span class="soft-desc">Meets deadlines and prioritizes tasks effectively.</span>
+      </div>
+      <div class="soft-card">
+        <span class="soft-icon">📖</span>
+        <span class="soft-name">Eager to Learn</span>
+        <span class="soft-desc">Always open to acquiring new knowledge and skills.</span>
+      </div>
+      <div class="soft-card">
+        <span class="soft-icon">🎯</span>
+        <span class="soft-name">Attention to Detail</span>
+        <span class="soft-desc">Produces accurate and well-reviewed work.</span>
+      </div>
+    </div>
+  </div><!-- /soft skills -->
+
+</section><!-- /skills -->
+
+<!-- ══════════════════════════════════════
+     SECTION · EDUCATION & ACHIEVEMENTS
+══════════════════════════════════════ -->
+<section id="education" class="education">
+
+  <div class="section-header">
+    <span class="section-number">07</span>
+    <h2 class="section-title">Education & <em>Achievements</em></h2>
+  </div>
+
+  <div class="edu-wrap">
+
+    <!-- Card 1 -->
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+
+      <div class="edu-info">
+        <h3>BS Information Technology</h3>
+        <p>STI College Naga • Present</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="edu-card">
+      <div class="edu-icon">🏆</div>
+
+      <div class="edu-info">
+        <h3>Grade 12 With Honor</h3>
+        <p>Academic Excellence Award • 2023</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="edu-card">
+      <div class="edu-icon">🏫</div>
+
+      <div class="edu-info">
+        <h3>Senior High School - GAS Strand</h3>
+        <p>Calabanga National Science High School • 2021 - 2023</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="edu-card">
+      <div class="edu-icon">🏫</div>
+
+      <div class="edu-info">
+        <h3>Junior High School</h3>
+        <p>Calabanga National Science High School • 2017 - 2020</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ══════════════════════════════════════
+     SECTION 7 · CONTACT
+══════════════════════════════════════ -->
+<section id="contact" class="contact">
+  <div class="contact-inner">
+
+    <div class="section-header light">
+      <span class="section-number">08</span>
+      <h2 class="section-title">Get in <em>Touch</em></h2>
+    </div>
+    <p class="contact-intro">If you have any concerns, you can contact me through my socials or send me a message below.</p>
+
+    <div class="socials-grid">
+
+      <a href="https://www.facebook.com/yourstrulym3ckay/" class="social-card sc-fb">
+        <div class="sc-icon">f</div>
+        <div class="sc-info">
+          <span class="sc-platform">Facebook</span>
+          <span class="sc-handle">Micaella Aguirre Nodado</span>
+        </div>
+        <span class="sc-arrow">↗</span>
+      </a>
+
+      <a href="https://www.instagram.com/itzmickayieeee3_/?hl=en" class="social-card sc-ig">
+        <div class="sc-icon">◎</div>
+        <div class="sc-info">
+          <span class="sc-platform">Instagram</span>
+          <span class="sc-handle">itzmickaayie3</span>
+        </div>
+        <span class="sc-arrow">↗</span>
+      </a>
+
+      <a href="mailto:nodadomicaella305@gmail.com" class="social-card sc-gm">
+        <div class="sc-icon">@</div>
+        <div class="sc-info">
+          <span class="sc-platform">Gmail</span>
+          <span class="sc-handle">Micaella Nodado</span>
+        </div>
+        <span class="sc-arrow">↗</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/micaella-nodado-3a3705406/" class="social-card sc-li">
+        <div class="sc-icon">in</div>
+        <div class="sc-info">
+          <span class="sc-platform">LinkedIn</span>
+          <span class="sc-handle">Micaella Nodado</span>
+        </div>
+        <span class="sc-arrow">↗</span>
+      </a>
+
+      <a href="tel:09104341230" class="social-card sc-ph">
+        <div class="sc-icon">✆</div>
+        <div class="sc-info">
+          <span class="sc-platform">Contact Number</span>
+          <span class="sc-handle">0910 634 1230</span>
+        </div>
+        <span class="sc-arrow">↗</span>
+      </a>
+
+      <a href="https://github.com/nodadomicaella305-eng" class="social-card sc-github">
+  <div class="sc-icon">G</div>
+  <div class="sc-info">
+    <span class="sc-platform">GitHub</span>
+    <span class="sc-handle">Micaella</span>
+  </div>
+  <span class="sc-arrow">↗</span>
+</a>
+
+    </div><!-- /socials-grid -->
+
+    <!-- ── Contact Form ── -->
+    <div class="contact-form-wrap">
+      <div class="contact-form-header">
+        <div class="header-dot" style="background: rgba(255,255,255,0.5);"></div>
+        <span class="header-label" style="color: rgba(255,255,255,0.6);">Send Me a Message</span>
+      </div>
+
+      <div class="contact-form" id="contactForm">
+
+        <div class="cf-field">
+          <label class="cf-label">YOUR NAME</label>
+          <input class="cf-input" type="text" id="cfName" placeholder="Enter your name" autocomplete="off">
+        </div>
+
+        <div class="cf-field">
+          <label class="cf-label">YOUR EMAIL</label>
+          <input class="cf-input" type="email" id="cfEmail" placeholder="Enter your email" autocomplete="off">
+        </div>
+
+        <div class="cf-field">
+          <label class="cf-label">WRITE YOUR MESSAGE HERE</label>
+          <textarea class="cf-input cf-textarea" id="cfMessage" placeholder="Enter your message" rows="5"></textarea>
+        </div>
+
+        <button class="cf-submit" id="cfSubmit" onclick="submitContactForm()">
+          <span id="cfSubmitText">Submit now</span>
+        </button>
+
+        <div class="cf-feedback" id="cfFeedback"></div>
+
+      </div>
+    </div><!-- /contact-form-wrap -->
+
+  </div><!-- /contact-inner -->
+</section><!-- /contact -->
+
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span>© 2026 WEB SYSTEMS &amp; TECHNOLOGY</span>
+    <span class="footer-dot">✦</span>
+    <span>All Rights Reserved</span>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
